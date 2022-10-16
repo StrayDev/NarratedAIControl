@@ -20,6 +20,8 @@ namespace Otherworld.Command
 
         private void OnEnable()
         {
+            _commands = new Stack<ICommand>();
+            
             // set the undo action to be able to call undo
             UndoCommand.UndoCallback = Undo;
             

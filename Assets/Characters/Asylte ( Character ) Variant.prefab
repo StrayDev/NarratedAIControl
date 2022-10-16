@@ -12,6 +12,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asylte ( Character )
       objectReference: {fileID: 0}
+    - target: {fileID: 4476434666165610574, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
+        type: 3}
+      propertyPath: defaultInput
+      value: 
+      objectReference: {fileID: 11400000, guid: 7aefdda1eac5684409be540c3dfac222,
+        type: 2}
     - target: {fileID: 4476434666165610575, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
         type: 3}
       propertyPath: m_RootOrder
@@ -20,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 4476434666165610575, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.94
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4476434666165610575, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
         type: 3}
@@ -30,7 +36,7 @@ PrefabInstance:
     - target: {fileID: 4476434666165610575, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.104855
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4476434666165610575, guid: 9f5e6c51387861a469a7cb1c9cb5dbcc,
         type: 3}

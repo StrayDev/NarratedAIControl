@@ -1,5 +1,7 @@
+// Unity Engine
 using UnityEngine;
 
+// Otherworld
 namespace Otherworld.Events
 {
     /// <summary>

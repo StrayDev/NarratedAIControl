@@ -12,6 +12,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tahir ( Character )
       objectReference: {fileID: 0}
+    - target: {fileID: 2891319223408873934, guid: c6b98594ad9e7d04cba9bcbec492c862,
+        type: 3}
+      propertyPath: defaultInput
+      value: 
+      objectReference: {fileID: 11400000, guid: 7abcde0806d96bf48a6908cdf6946bd7,
+        type: 2}
     - target: {fileID: 2891319223408873935, guid: c6b98594ad9e7d04cba9bcbec492c862,
         type: 3}
       propertyPath: m_RootOrder
@@ -20,17 +26,17 @@ PrefabInstance:
     - target: {fileID: 2891319223408873935, guid: c6b98594ad9e7d04cba9bcbec492c862,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.9999998
       objectReference: {fileID: 0}
     - target: {fileID: 2891319223408873935, guid: c6b98594ad9e7d04cba9bcbec492c862,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.396
       objectReference: {fileID: 0}
     - target: {fileID: 2891319223408873935, guid: c6b98594ad9e7d04cba9bcbec492c862,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2891319223408873935, guid: c6b98594ad9e7d04cba9bcbec492c862,
         type: 3}

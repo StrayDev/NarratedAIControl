@@ -1,5 +1,4 @@
 // System
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,13 +8,14 @@ using System.Linq;
 using UnityEngine;
 
 // Otherworld
-using Otherworld.Core;
+using Otherworld.Command;
 
 namespace Otherworld.Combat
 {
     /// <summary>
     /// 
     /// </summary>
+
     public class CombatSystem : MonoBehaviour
     {
         [SerializeField] private CharacterList[] partyList;
@@ -30,15 +30,18 @@ namespace Otherworld.Combat
         [SerializeField] private int turn = 0;
         [SerializeField] private int round = 0;
 
+        private void OnEnable()
+        {
+            StartCombatCommand.Callback += OnStartCombat;
+            SkipTurnCommand.Callback += OnSkipTurn;
+        }
 
-        [ContextMenu("Invoke OnSkipTurn()")]
         public void OnSkipTurn()
         {
             skipTurn = true;
         }
 
-        [ContextMenu("Invoke OnCombatTrigger()")]
-        public void OnCombatTrigger()
+        public void OnStartCombat()
         {
             _combatants = new List<CombatBehaviour>();
 
@@ -161,6 +164,36 @@ namespace Otherworld.Combat
                 _combatants.Add(behaviour);
                 yield return null;
             }
+        }
+    }
+
+    public class StartCombatCommand : ICommand
+    {
+        internal static Action Callback;
+        
+        public void Execute()
+        {
+            Callback.Invoke();
+        }
+
+        public void Undo()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    
+    public class SkipTurnCommand : ICommand
+    {
+        internal static Action Callback;
+        
+        public void Execute()
+        {
+            Callback.Invoke();
+        }
+
+        public void Undo()
+        {
+            throw new NotImplementedException();
         }
     }
 }

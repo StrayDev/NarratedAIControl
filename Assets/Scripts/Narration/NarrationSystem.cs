@@ -1,5 +1,6 @@
 // Systems
 using System;
+using Otherworld.Combat;
 
 // Unity Engine
 using UnityEngine;
@@ -25,6 +26,27 @@ namespace Otherworld.Narration
         
         private DictationRecognizer _dictationRecognizer;
 
+        // Move to Position 
+        private void DoThing()
+        {   
+            // Undo last Command
+            commandChannel.Invoke(new UndoCommand());
+            
+            // Move to position
+            commandChannel.Invoke(new MoveToPositionCommand(new Vector3(0, 0, 0)));
+            
+            /*// Move to cell
+            commandChannel.Invoke(new MoveToCellCommand(selected, new Vector2(0, 0, 0)));
+            
+            // Follow Path
+            commandChannel.Invoke(new FollowWaypointsCommand(Waypoints, direction, speed));*/
+        }
+        
+        // Follow Path
+        // Begin Combat 
+        // Stop moving 
+        // Move to Cell 
+        
         // Setup / Clean-up
         private void OnEnable()
         {
@@ -54,6 +76,9 @@ namespace Otherworld.Narration
             _dictationRecognizer.DictationError -= OnDictationError;
             _dictationRecognizer.DictationHypothesis -= OnDictationHypothesis;
             _dictationRecognizer.DictationResult -= OnDictationResult;
+            
+            _dictationRecognizer.Stop();
+            _dictationRecognizer.Dispose();
         }
         
         private void OnDictationResult(string text, ConfidenceLevel confidence)
@@ -141,63 +166,71 @@ namespace Otherworld.Narration
         
         private void ParseDictationResult(string text, ConfidenceLevel confidence)
         {
-            /*switch (text)
+            switch (text)
             {
+                case "roll initiative":
+                    commandChannel.Invoke(new StartCombatCommand());
+                    break;
+                
+                case "skip turn":
+                    commandChannel.Invoke(new StartCombatCommand());
+                    break;
+                
+                case "your party leave the forest":
+                    commandChannel.Invoke(new LeaveTheForestCommand());
+                    break;
+                
+                case "your party follow the path":
+                    commandChannel.Invoke(new TravelPathCommand());
+                    break;
+                
                 case "stop":
-                    MoveEvent.Invoke(Vector2.zero);
-                    updateText.Invoke("Moving to the left.");
+                    //MoveEvent.Invoke(Vector2.zero);
+                    narrationText.Invoke("Moving to the left.");
                     break;
 
                 case "face left":
                 case "face west":
                 case "face W":
-                    MoveEvent.Invoke(Vector2.left * .005f);
-                    updateText.Invoke("Facing to the left.");
+                    //MoveEvent.Invoke(Vector2.left * .005f);
+                    narrationText.Invoke("Facing to the left.");
                     break;
 
                 case "face right":
                 case "face east":
                 case "face E":
-                    MoveEvent.Invoke(Vector2.right * .005f);
-                    updateText.Invoke("Facing to the right.");
+                    //MoveEvent.Invoke(Vector2.right * .005f);
+                    narrationText.Invoke("Facing to the right.");
                     break;
 
                 case "walk left":
                 case "walk west":
                 case "walk W":
-                    MoveEvent.Invoke(Vector2.left * .5f);
-                    updateText.Invoke("Moving to the left.");
+                    //MoveEvent.Invoke(Vector2.left * .5f);
+                    narrationText.Invoke("Moving to the left.");
                     break;
 
                 case "walk right":
                 case "walk east":
                 case "walk E":
-                    MoveEvent.Invoke(Vector2.right * .5f);
-                    updateText.Invoke("Moving to the right.");
+                    //MoveEvent.Invoke(Vector2.right * .5f);
+                    narrationText.Invoke("Moving to the right.");
                     break;
 
                 case "run left":
                 case "run west":
                 case "run W":
-                    MoveEvent.Invoke(Vector2.left);
-                    updateText.Invoke("Moving to the left.");
+                    //MoveEvent.Invoke(Vector2.left);
+                    narrationText.Invoke("Moving to the left.");
                     break;
 
                 case "run right":
                 case "run east":
                 case "run E":
-                    MoveEvent.Invoke(Vector2.right);
-                    updateText.Invoke("Moving to the right.");
+                    //MoveEvent.Invoke(Vector2.right);
+                    narrationText.Invoke("Moving to the right.");
                     break;
-
-                case "roll initiative":
-                    // start combat
-                    break;
-
-                default:
-                    updateText.Invoke(UppercaseFirst(text) + '.');
-                    break;
-            }*/
+            }
         }
 
         private void SetText(string text, string ending = "")
