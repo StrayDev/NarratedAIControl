@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle_Left
+    m_Hash: -1780189029
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_0
+      m_Hash: 1588553794
+      m_Sprite: {fileID: -993306451, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1967743297, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  - m_Name: Idle_Down
+    m_Hash: -209973304
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_2
+      m_Hash: -1331623570
+      m_Sprite: {fileID: 1808809097, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -887225329, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  - m_Name: Idle_Up
+    m_Hash: 2139721285
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_4
+      m_Hash: 1505930331
+      m_Sprite: {fileID: -795141301, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1464081187, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  - m_Name: Walk_Horizontal
+    m_Hash: 176319289
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_5
+      m_Hash: 784702669
+      m_Sprite: {fileID: -1065821057, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -313954521, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_6
+      m_Hash: -1211314825
+      m_Sprite: {fileID: -1486882502, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1087723750, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_7
+      m_Hash: -1060373023
+      m_Sprite: {fileID: 920959753, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1578755819, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_8
+      m_Hash: 1349836912
+      m_Sprite: {fileID: 33937501, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1499016575, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_9
+      m_Hash: 661901542
+      m_Sprite: {fileID: -1091566380, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1231929261, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_10
+      m_Hash: 1967940020
+      m_Sprite: {fileID: -1038509924, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 658800246, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: Walk_Down
+    m_Hash: -443221697
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_11
+      m_Hash: 38490402
+      m_Sprite: {fileID: -1715732790, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1440376984, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_12
+      m_Hash: -1690173288
+      m_Sprite: {fileID: -1684822423, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1372451760, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_13
+      m_Hash: -331010034
+      m_Sprite: {fileID: 1403484072, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -434308568, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_14
+      m_Hash: 1914807725
+      m_Sprite: {fileID: 991472522, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1098636391, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_15
+      m_Hash: 86414651
+      m_Sprite: {fileID: 504407565, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -618320346, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_16
+      m_Hash: -1674591103
+      m_Sprite: {fileID: 1963253198, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 399352180, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: Walk_Up
+    m_Hash: -126185642
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_17
+      m_Hash: -349637609
+      m_Sprite: {fileID: 179606046, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1466592943, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_18
+      m_Hash: 2073553286
+      m_Sprite: {fileID: -1608973311, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -176470518, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_19
+      m_Hash: 210819344
+      m_Sprite: {fileID: 1733225166, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1659645237, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_20
+      m_Hash: 1583428215
+      m_Sprite: {fileID: 1176917148, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -712414878, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_21
+      m_Hash: 694551265
+      m_Sprite: {fileID: -1523586771, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 301500671, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_22
+      m_Hash: -1334881445
+      m_Sprite: {fileID: 801207011, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -2432520, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: Run_Left
+    m_Hash: -1076005596
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_23
+      m_Hash: -949460019
+      m_Sprite: {fileID: -1456831341, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1091923864, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_24
+      m_Hash: 1494021742
+      m_Sprite: {fileID: 658272516, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 601543351, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_25
+      m_Hash: 772523768
+      m_Sprite: {fileID: 1626976670, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1573120804, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_26
+      m_Hash: -1224566974
+      m_Sprite: {fileID: -2095823675, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -2128914669, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_27
+      m_Hash: -1073371180
+      m_Sprite: {fileID: 1406283729, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -205983692, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_28
+      m_Hash: 1354414661
+      m_Sprite: {fileID: -503832597, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1683209769, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: Run_Down
+    m_Hash: -649788809
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_29
+      m_Hash: 666733267
+      m_Sprite: {fileID: 709190073, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -141711863, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_30
+      m_Hash: 1199178550
+      m_Sprite: {fileID: 1860103887, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -274997599, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_31
+      m_Hash: 813511584
+      m_Sprite: {fileID: 1563549367, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 146898123, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_32
+      m_Hash: -1451990502
+      m_Sprite: {fileID: -1105565483, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 722822695, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_33
+      m_Hash: -562867572
+      m_Sprite: {fileID: 1178199013, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1428673008, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_34
+      m_Hash: 1075300143
+      m_Sprite: {fileID: 622454230, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1586604473, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: Run_Up
+    m_Hash: -362391952
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_35
+      m_Hash: 923858873
+      m_Sprite: {fileID: -263443838, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -2078058361, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_36
+      m_Hash: -1374050813
+      m_Sprite: {fileID: 1480356193, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -902418877, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_37
+      m_Hash: -652306795
+      m_Sprite: {fileID: 140873911, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1363812678, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_38
+      m_Hash: 1235323652
+      m_Sprite: {fileID: 93257830, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1599133492, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_39
+      m_Hash: 1051114386
+      m_Sprite: {fileID: -1532091094, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1343511889, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    - m_Name: Mobile - Octopath Traveler Champions of the Continent - Telly_40
+      m_Hash: 138122737
+      m_Sprite: {fileID: -1782418087, guid: d4748df286c93f04aba62e486473a86e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 51284333, guid: b2107974858180548ae56674110f3441,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  m_PrimaryLibraryGUID: dfa92afcba754b045a9ba09c283e06b8
