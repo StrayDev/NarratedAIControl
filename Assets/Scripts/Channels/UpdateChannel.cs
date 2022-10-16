@@ -10,23 +10,23 @@ namespace Otherworld.Core
     [CreateAssetMenu(menuName = "Events/Update Channel")]
     public class UpdateChannel : ScriptableObject
     {
-        public event Action UpdateEvent      = delegate {  };
-        public event Action FixedUpdateEvent = delegate {  };
-        public event Action LateUpdateEvent  = delegate {  };
+        public event Action OnUpdateEvent      = delegate {  };
+        public event Action OnFixedUpdateEvent = delegate {  };
+        public event Action OnLateUpdateEvent  = delegate {  };
 
         internal void Update()
         {
-            UpdateEvent?.Invoke();
+            OnUpdateEvent?.Invoke();
         }
         
         internal void FixedUpdate()
         {
-            FixedUpdateEvent?.Invoke();
+            OnFixedUpdateEvent?.Invoke();
         }
         
         internal void LateUpdate()
         {
-            LateUpdateEvent?.Invoke();
+            OnLateUpdateEvent?.Invoke();
         }
     }
 }

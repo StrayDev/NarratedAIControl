@@ -17,8 +17,8 @@ public class PartySystem : MonoBehaviour
             var cc = transforms[i].GetComponent<CharacterController>();
             var input = ScriptableObject.CreateInstance<PartyFollowBehaviour>();
 
-            input.target = transforms[i - 1];
-            input.owner = transforms[i];
+            //input.target = transforms[i - 1];
+            //input.self = transforms[i];
             
             cc.SetInputBehaviour(input);
             _partyBehaviours.Add(input);
@@ -36,7 +36,7 @@ public class PartySystem : MonoBehaviour
         
         foreach (var behaviour in _partyBehaviours)
         {
-            behaviour.Update();
+            //behaviour.Update();
         }
     }
 }

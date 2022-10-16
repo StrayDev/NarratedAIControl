@@ -32,7 +32,7 @@ public class CharacterController : MonoBehaviour
         Input.OnSelectEvent -= effects.OnSelected;
     }
 
-    private void OnMoveInput(Vector2 vector)
+    public void OnMoveInput(Vector2 vector)
     {
         _inputVector = new Vector3(vector.x, 0, vector.y);
 

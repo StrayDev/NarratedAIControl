@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77caae1b032133544a1a4dc0fb8710ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultInput: {fileID: 11400000, guid: 4f492e022175651409193bb0a2d0de83, type: 2}
+  defaultInput: {fileID: 0}
   animator: {fileID: 2998023828441684727}
   movement: {fileID: 2998023828474955225}
   effects: {fileID: 681501516337225419}

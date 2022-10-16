@@ -163,6 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1860956362}
+  - component: {fileID: 1860956365}
   - component: {fileID: 1860956363}
   - component: {fileID: 1860956364}
   m_Layer: 0
@@ -214,3 +215,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tickChannel: {fileID: 11400000, guid: 93b18f86d03cdfa47a9cb7e1ca743cd6, type: 2}
   tickData: {fileID: 11400000, guid: d0bb86759fde11746802783000a9fa8e, type: 2}
+--- !u!114 &1860956365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860956360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b877a7b546953294abc017b7385ae8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startChannel: {fileID: 11400000, guid: da3cb5bc246a026419a16f013834cd63, type: 2}

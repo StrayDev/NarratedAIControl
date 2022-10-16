@@ -13,21 +13,21 @@ namespace Otherworld.Core
         /// <summary>
         /// Called 5 times a second at the default tick rate
         /// </summary>
-        public Action OnTick = default;
+        public event Action OnTickEvent = default;
 
         /// <summary>
         /// Called once a second at the default tick rate
         /// </summary>
-        public Action OnTickMajor = default;
+        public event Action OnMajorTickEvent = default;
         
         internal void Tick()
         {
-            OnTick?.Invoke();
+            OnTickEvent?.Invoke();
         }
         
         internal void TickMajor()
         {
-            OnTickMajor?.Invoke();
+            OnMajorTickEvent?.Invoke();
         }
     }
 }

@@ -1,53 +1,72 @@
+// System
+using System.Collections;
 
-using System;
-using Otherworld.Core;
+// Unity Engine
 using UnityEngine;
-using UnityEngine.Experimental.Video;
-using UnityEngine.InputSystem;
-using UnityEngine.Windows.Speech;
+
+// Otherworld
+using Otherworld.Core;
 
 [CreateAssetMenu(fileName = "new PartyFollowBehaviour", menuName = "Input Behaviour/Party Follow Behaviour")]
 public class PartyFollowBehaviour : InputProvider
 {
-    public Transform owner;
-    public Transform target;
-    
-    [SerializeField] private float idleTrigger = .75f;
-    [SerializeField] private float walkTrigger = 1.25f;
+    [SerializeField] private UpdateChannel updateChannel;
+    [SerializeField] private StartChannel startChannel;
 
-    private Vector3 _vector;
-    
-    public void Update()
+    [SerializeField] private CharacterList party;
+
+    public Transform self;
+    private Transform target;
+
+    private float idleTrigger = .75f;
+    private float walkTrigger = 1.25f;
+
+    private void OnEnable()
+    {
+        startChannel.OnStartEvent += OnStart;
+        updateChannel.OnUpdateEvent += OnUpdate;
+    }
+
+    [SerializeField] private int selfId = 0;
+    [SerializeField] private int targetId = 0;
+
+    private void OnStart()
+    {
+        target = party[targetId];
+        self = party[selfId];
+    }
+
+    private void OnUpdate()
     {
         if (target == null) return;
 
         // stash positions
-        var p1 = owner.position; 
-        var p2 = target.position; 
-        
+        var p1 = self.position;
+        var p2 = target.position;
+
         // get the direction to the target 
-        var _vector = (p2 - p1).normalized;
-        
+        var vector = (p2 - p1).normalized;
+
         // get the move speed
-        var distance = Vector3.Distance(p1, p2); 
-        
+        var distance = Vector3.Distance(p1, p2);
+
         // stop moving if close enough
-        if ( distance < idleTrigger)
+        if (distance < idleTrigger)
         {
             MoveEvent.Invoke(Vector3.zero);
             return;
         }
 
         // set walk / run speed
-        _vector *= distance < walkTrigger ? .5f : .8f;
-        
+        vector *= distance < walkTrigger ? .5f : .8f;
+
         // send the move information 
-        MoveEvent.Invoke(ToVector2(_vector));
+        Debug.Log($"{self.name} : {vector}");
+        MoveEvent.Invoke(ToVector2(vector));
     }
 
     private Vector2 ToVector2(Vector3 vector)
     {
         return new Vector2(vector.x, vector.z);
     }
-
 }
