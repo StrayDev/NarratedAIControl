@@ -1,13 +1,17 @@
+// System
 using System;
+
+// Unity Engine
 using UnityEngine;
 
-namespace Otherworld.Core
+// Otherworld
+namespace Otherworld.Events
 {
     /// <summary>
     /// This class is for events related to the MonoBehaviour update loop
     /// </summary>
     
-    [CreateAssetMenu(menuName = "Events/Start Channel")]
+    [CreateAssetMenu(menuName = "Composite Channels/Start")]
     public class StartChannel : ScriptableObject
     {
         public event Action OnStartEvent = delegate {  };
@@ -16,6 +20,5 @@ namespace Otherworld.Core
         {
             OnStartEvent.Invoke();
         }
-
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Otherworld.Core
+namespace Otherworld.Events
 {
     /// <summary>
     /// This class calls an event for the MonoBehaviour start event 

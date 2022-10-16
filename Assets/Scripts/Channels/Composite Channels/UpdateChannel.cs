@@ -1,13 +1,17 @@
+// System
 using System;
+
+// Unity Engine
 using UnityEngine;
 
+// Otherworld
 namespace Otherworld.Core
 {
     /// <summary>
     /// This class is for events related to the MonoBehaviour update loop
     /// </summary>
-    
-    [CreateAssetMenu(menuName = "Events/Update Channel")]
+
+    [CreateAssetMenu(menuName = "Composite Channels/Update")]
     public class UpdateChannel : ScriptableObject
     {
         public event Action OnUpdateEvent      = delegate {  };

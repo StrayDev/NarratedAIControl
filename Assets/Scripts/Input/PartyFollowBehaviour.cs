@@ -6,6 +6,7 @@ using UnityEngine;
 
 // Otherworld
 using Otherworld.Core;
+using Otherworld.Events;
 
 [CreateAssetMenu(fileName = "new PartyFollowBehaviour", menuName = "Input Behaviour/Party Follow Behaviour")]
 public class PartyFollowBehaviour : InputProvider
@@ -61,7 +62,6 @@ public class PartyFollowBehaviour : InputProvider
         vector *= distance < walkTrigger ? .5f : .8f;
 
         // send the move information 
-        Debug.Log($"{self.name} : {vector}");
         MoveEvent.Invoke(ToVector2(vector));
     }
 

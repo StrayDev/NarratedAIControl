@@ -7,7 +7,7 @@ namespace Otherworld.Core
     /// This class is for events related to game ticks
     /// </summary>
     
-    [CreateAssetMenu(menuName = "Event Channels/Tick Channel")]
+    [CreateAssetMenu(menuName = "Composite Channels/Tick")]
     public class TickChannel : ScriptableObject
     {
         /// <summary>

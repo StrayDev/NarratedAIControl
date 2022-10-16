@@ -288,8 +288,53 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1172282623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172282624}
+  - component: {fileID: 1172282625}
+  m_Layer: 0
+  m_Name: Command System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172282624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172282623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172282625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172282623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02273633841ee124697b4fee51f73ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CommandChannel: {fileID: 11400000, guid: ad30f55353bf60b4f9acbae679c9905a, type: 2}
 --- !u!1 &1261755683
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   party: {fileID: 11400000, guid: 3ce9cd63112b5644f90da1792880c67c, type: 2}
-  camera: {fileID: 587949050}
+  mainCamera: {fileID: 587949050}
 --- !u!1 &1748186128
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2119387637}
+  - component: {fileID: 2119387638}
   m_Layer: 0
   m_Name: Narration System
   m_TagString: Untagged
@@ -419,5 +465,19 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119387638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119387636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc27fd47f7ff3a4468756a37984200da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandChannel: {fileID: 11400000, guid: ad30f55353bf60b4f9acbae679c9905a, type: 2}
+  narrationText: {fileID: 11400000, guid: 1091264978391b740b524000cbe3fab1, type: 2}
